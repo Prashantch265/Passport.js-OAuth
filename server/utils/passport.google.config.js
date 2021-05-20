@@ -1,6 +1,6 @@
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
-const userCtrl = require("../userOauth.controller");
-const authCtrl = require("../auth.controller");
+const userCtrl = require("../controller/user.controller");
+const authCtrl = require("../controller/auth.controller");
 require("dotenv").config();
 
 module.exports = (passport) => {
