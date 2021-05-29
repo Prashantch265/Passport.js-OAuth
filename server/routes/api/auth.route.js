@@ -13,7 +13,8 @@ router.route("/google").get(
 //callback route
 //hand control to passport to get profile info from query string
 router.route("/google/cb").get(passport.authenticate("google"), (req, res) => {
-  res.send("successfull callback");
+  // res.send(req.user);
+  res.redirect('/');
 });
 
 module.exports = router;

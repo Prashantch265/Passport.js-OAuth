@@ -5,6 +5,7 @@ const create = async (profile) => {
     let user = User.build({
       googleID: profile.id,
       username: profile.displayName,
+      thumbnail: profile._json.picture
     });
 
     await user.save();
